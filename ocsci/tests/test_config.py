@@ -16,4 +16,3 @@ class TestConfig(object):
         config_sections = ocsci.config.to_dict().keys()
         for section_name in config_sections:
             section = getattr(ocsci.config, section_name)
-            assert section == getattr(ocs.defaults, section_name)
